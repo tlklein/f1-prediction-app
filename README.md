@@ -10,7 +10,6 @@ This is a simple application to predict F1 race results and hold F1 team data vi
 2. Install modules
 - `npm install`
 - `npm install next`
-- 
 
 3. Create a .env.locall file from the env.example.txt file
 - `cp env.example.txt .env.local`
