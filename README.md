@@ -1,4 +1,4 @@
-# HeliosAi Prototype
+# Helios Prototype
 
 This is a simple application to predict F1 race results and hold F1 team data via api/csv. 
 

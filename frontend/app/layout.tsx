@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: 'Helios',
   description: 'F1 Race Prediction Application',
   icons: {
-    icon: '/favicon.svg'
+    icon: '/frontend/public/favicon.svg'
   }
 };
 
