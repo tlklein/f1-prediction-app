@@ -7,8 +7,10 @@ This is a simple application to predict F1 race results and hold F1 team data vi
 1. Clone depo
 - `git clone https://github.com/tlklein/heliosai.git`
 
-2. Install node modules
+2. Install modules
 - `npm install`
+- `npm install next`
+- 
 
 3. Create a .env.locall file from the env.example.txt file
 - `cp env.example.txt .env.local`
