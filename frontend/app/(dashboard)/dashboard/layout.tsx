@@ -4,10 +4,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Helios',
-  description: 'F1 Race Prediction Application',
-  icons: {
-    icon: '/frontend/public/favicon.svg'
-  }
+  description: 'F1 Race Prediction Application'
 };
 
 
