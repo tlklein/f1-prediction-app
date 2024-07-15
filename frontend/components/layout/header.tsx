@@ -10,7 +10,7 @@ export default function Header() {
       <nav className="flex h-14 items-center justify-between px-4">
         <div className="hidden lg:block">
           <Link
-            href={'https://github.com/tlklein/heliosai.git'}
+            href={'https://github.com/tlklein/helios.git'}
             target="_blank"
           >
           <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
