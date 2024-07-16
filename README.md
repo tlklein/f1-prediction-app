@@ -5,7 +5,7 @@ This is a simple application to predict F1 race results and hold F1 team data vi
 
 
 # What Is F1 Anyway?
-Formula 1 (F1) is the pinnacle of motorsport, characterized by high-speed racing, cutting-edge technology, and global appeal. Established in 1950, F1 features teams and drivers competing in a series of Grand Prix events held worldwide on purpose-built circuits and city streets. 
+Formula 1 (a.k.a. F1 or Formula One) is the highest class of single-seater auto racing sanctioned by the Fédération Internationale de l'Automobile (FIA) and owned by the Formula One Group. The FIA Formula One World Championship has been one of the premier forms of racing around the world since its inaugural season in 1950. The word "formula" in the name refers to the set of rules to which all participants' cars must conform. A Formula One season consists of a series of races, known as Grands Prix, which take place worldwide on purpose-built circuits and on public roads.
 
 To Learn More: https://www.formula1.com/en/latest/tags/beginner-s-guide.7szZSRQkywApBCsTz1sDwg
 

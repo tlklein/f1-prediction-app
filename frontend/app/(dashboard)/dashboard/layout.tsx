@@ -7,7 +7,7 @@ import Document, { Head, Html, Main, NextScript, DocumentContext } from "next/do
 
 
 export const metadata: Metadata = {
-  title: 'HeliosAI',
+  title: 'Helios',
   description: 'F1 Race Prediction Application'
 };
 

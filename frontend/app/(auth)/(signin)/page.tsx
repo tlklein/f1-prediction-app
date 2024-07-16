@@ -5,8 +5,8 @@ import { buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'Authentication',
-  description: 'Authentication forms built using components.'
+  title: 'Helios Login',
+  description: 'Helios Application Authentication Form'
 };
 
 export default function AuthenticationPage() {
@@ -54,8 +54,8 @@ export default function AuthenticationPage() {
               className="underline underline-offset-4 hover:text-primary"
             >
               Terms of Service
-            </Link>{' '}
-            and{' '}
+            </Link>{''}
+            and{''}
             <Link
               href="/privacy"
               className="underline underline-offset-4 hover:text-primary"
