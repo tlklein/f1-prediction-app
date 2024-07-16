@@ -1,9 +1,13 @@
 import Header from '@/components/layout/header';
 import Sidebar from '@/components/layout/sidebar';
 import type { Metadata } from 'next';
+import Favicon from '@/components/ui/favicon';
+import Document, { Head, Html, Main, NextScript, DocumentContext } from "next/document";
+
+
 
 export const metadata: Metadata = {
-  title: 'Helios',
+  title: 'HeliosAI',
   description: 'F1 Race Prediction Application'
 };
 

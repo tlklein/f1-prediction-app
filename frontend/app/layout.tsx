@@ -23,6 +23,7 @@ export default async function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} overflow-hidden`}>
+        
         <NextTopLoader showSpinner={false} />
         <Providers session={session}>
           <Toaster />

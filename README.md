@@ -1,6 +1,6 @@
 # Helios Prototype
 
-This is a simple application to predict F1 race results and hold F1 team data via api/csv. 
+This is a simple application to predict F1 race results and hold F1 team data via csv. 
 
 
 ## How To Deploy / Commands
@@ -27,10 +27,9 @@ This is a simple application to predict F1 race results and hold F1 team data vi
 
 7. You should now be able to run the application. 
 - http://localhost:3000
-- http://localhost:3001 (only if port 3000 is already running)
 
 
-## Stack
+## Tech Stack
 ### Frontend
 - Framework - [Next.js 14](https://nextjs.org/13)
 - Language - [TypeScript](https://www.typescriptlang.org)
@@ -40,14 +39,15 @@ This is a simple application to predict F1 race results and hold F1 team data vi
 - State Management - [Zustand](https://zustand-demo.pmnd.rs)
 - Auth - [Auth.js](https://authjs.dev/)
 - File Uploading - [Uploadthing](https://uploadthing.com)
-- Tables - [Tanstack Tables](https://ui.shadcn.com/docs/components/data-table)
-- Forms - [React Hook Form](https://ui.shadcn.com/docs/components/form)
 - Linting - [ESLint](https://eslint.org)
 - Pre-commit Hooks - [Husky](https://typicode.github.io/husky/)
 - Formatting - [Prettier](https://prettier.io)
 
-### Backend
-
+### Backend 
+- Sikit-learn - [Sikit-learn](https://scikit-learn.org/stable/index.html)
+- Python - [Python](https://www.python.org/)
+- Flask - [Flask](https://flask.palletsprojects.com/)
+- Heroku [Heroku](https://devcenter.heroku.com/start)
 
 ## References
 Admin Dashboard Starter With NextJS14 and Shadcn UI/UX
@@ -56,3 +56,6 @@ Link: https://github.com/Kiranism/next-shadcn-dashboard-starter
 
 Link: https://github.com/Kiranism/react-shadcn-dashboard-starter
 
+Formula 1 Race Prediction **
+
+Link: https://github.com/Sloopy3333/Formula-1-Prediction 
