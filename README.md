@@ -10,7 +10,7 @@ Formula 1 (F1) is the pinnacle of motorsport, characterized by high-speed racing
 To Learn More: https://www.formula1.com/en/latest/tags/beginner-s-guide.7szZSRQkywApBCsTz1sDwg
 
 
-## How To Deploy / Commands
+# How To Deploy / Commands
 1. Clone depo
 - `git clone https://github.com/tlklein/heliosai.git`
 
@@ -36,8 +36,8 @@ To Learn More: https://www.formula1.com/en/latest/tags/beginner-s-guide.7szZSRQk
 - http://localhost:3000
 
 
-## Tech Stack
-### Frontend
+# Tech Stack
+## Frontend
 - Framework - [Next.js 14](https://nextjs.org/13)
 - Language - [TypeScript](https://www.typescriptlang.org)
 - Styling - [Tailwind CSS](https://tailwindcss.com)
@@ -50,11 +50,11 @@ To Learn More: https://www.formula1.com/en/latest/tags/beginner-s-guide.7szZSRQk
 - Pre-commit Hooks - [Husky](https://typicode.github.io/husky/)
 - Formatting - [Prettier](https://prettier.io)
 
-### Backend 
+## Backend 
 - Python Machine Learning - [Sikit-learn](https://scikit-learn.org/stable/index.html)
 - F1 Data Set - [Kaggle](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020/data)
 
-## References
+# References
 Admin Dashboard Starter With NextJS14 and Shadcn UI/UX
 - Link: https://github.com/Kiranism/next-shadcn-dashboard-starter
 - Link: https://github.com/Kiranism/react-shadcn-dashboard-starter
