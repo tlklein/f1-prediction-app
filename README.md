@@ -1,6 +1,13 @@
-# Helios Prototype
+![F1 Car](https://www.si.com/.image/t_share/MjA0NjUwMDM0NDcyNDI5MTU3/red-bull.jpg)
 
+# Helios Prototype
 This is a simple application to predict F1 race results and hold F1 team data via csv. 
+
+
+# What Is F1 Anyway?
+Formula 1 (F1) is the pinnacle of motorsport, characterized by high-speed racing, cutting-edge technology, and global appeal. Established in 1950, F1 features teams and drivers competing in a series of Grand Prix events held worldwide on purpose-built circuits and city streets. 
+
+To Learn More: https://www.formula1.com/en/latest/tags/beginner-s-guide.7szZSRQkywApBCsTz1sDwg
 
 
 ## How To Deploy / Commands
@@ -44,10 +51,8 @@ This is a simple application to predict F1 race results and hold F1 team data vi
 - Formatting - [Prettier](https://prettier.io)
 
 ### Backend 
-- Sikit-learn - [Sikit-learn](https://scikit-learn.org/stable/index.html)
-- Python - [Python](https://www.python.org/)
-- Flask - [Flask](https://flask.palletsprojects.com/)
-- Heroku [Heroku](https://devcenter.heroku.com/start)
+- Python Machine Learning - [Sikit-learn](https://scikit-learn.org/stable/index.html)
+- F1 Data Set - [Kaggle](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020/data)
 
 ## References
 Admin Dashboard Starter With NextJS14 and Shadcn UI/UX
@@ -56,6 +61,10 @@ Link: https://github.com/Kiranism/next-shadcn-dashboard-starter
 
 Link: https://github.com/Kiranism/react-shadcn-dashboard-starter
 
-Formula 1 Race Prediction **
+Formula 1 Race Prediction 
 
 Link: https://github.com/Sloopy3333/Formula-1-Prediction 
+
+Formula 1 World Championship (1950 - 2024) 
+
+Link: https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020/data 
