@@ -1,4 +1,4 @@
-![F1 Car](https://www.si.com/.image/t_share/MjA0NjUwMDM0NDcyNDI5MTU3/red-bull.jpg)
+![F1 Car](https://www.nippon.com/en/ncommon/contents/japan-topics/2524215/2524215.jpg)
 
 # Helios Prototype
 This is a simple application to predict F1 race results and hold F1 team data via csv. 
