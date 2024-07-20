@@ -18,7 +18,7 @@ To Learn More: https://www.formula1.com/en/latest/tags/beginner-s-guide.7szZSRQk
 - `npm install`
 - `npm install next`
 
-3. Create a .env.locall file from the env.example.txt file
+3. Create a .env.local file from the env.example.txt file. Don't edit the text file, run the command first then change the .env.local file and leave the env.example.txt file blank.  
 - `cp env.example.txt .env.local`
 
 4. Add the required environment variables to the `.env.local` file.
@@ -53,6 +53,7 @@ To Learn More: https://www.formula1.com/en/latest/tags/beginner-s-guide.7szZSRQk
 ## Backend 
 - Python Machine Learning - [Sikit-learn](https://scikit-learn.org/stable/index.html)
 - F1 Data Set - [Kaggle](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020/data)
+- CSV Parser - [Paga Parse](https://www.papaparse.com/)
 
 # References
 Admin Dashboard Starter With NextJS14 and Shadcn UI/UX
