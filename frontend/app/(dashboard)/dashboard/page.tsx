@@ -7,16 +7,6 @@ import { RecentSales } from '@/components/recent-sales';
 import { Button } from '@/components/ui/button';
 import { DriverForm } from '@/components/forms/driver-form';
 
-
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
-
-
 import {
   Card,
   CardContent,
