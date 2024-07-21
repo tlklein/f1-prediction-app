@@ -25,9 +25,24 @@ import {
 import { toast } from "@/components/ui/use-toast"
 
 const FormSchema = z.object({
-  email: z
+  driver: z
     .string({
-      required_error: "Please select an email to display.",
+      required_error: "Please select an driver.",
+    })
+    .email(),
+  team: z
+    .string({
+      required_error: "Please select an team.",
+    })
+    .email(),
+  position: z
+    .string({
+      required_error: "Please select the grid position.",
+    })
+    .email(),
+  circuit: z
+    .string({
+      required_error: "Please select a circuit.",
     })
     .email(),
 })
@@ -50,13 +65,14 @@ export function DriverForm() {
 
   return (
     <Form {...form}>
+      <br></br>
       <form onSubmit={form.handleSubmit(onSubmit)}>
         <FormField
           control={form.control}
-          name="email"
+          name="driver"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              <FormLabel>Driver</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
                   <SelectTrigger>
@@ -69,14 +85,80 @@ export function DriverForm() {
                   <SelectItem value="m@support.com">m@support.com</SelectItem>
                 </SelectContent>
               </Select>
-              <FormDescription>
-                You can manage email addresses in your{" "}
-                <Link href="/examples/forms">email settings</Link>.
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
         />
+        <br></br>
+        <FormField
+          control={form.control}
+          name="team"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Team</FormLabel>
+              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <FormControl>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select a verified email to display" />
+                  </SelectTrigger>
+                </FormControl>
+                <SelectContent>
+                  <SelectItem value="m@example.com">m@example.com</SelectItem>
+                  <SelectItem value="m@google.com">m@google.com</SelectItem>
+                  <SelectItem value="m@support.com">m@support.com</SelectItem>
+                </SelectContent>
+              </Select>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <br></br>
+        <FormField
+          control={form.control}
+          name="driver"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Circuit</FormLabel>
+              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <FormControl>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select a verified email to display" />
+                  </SelectTrigger>
+                </FormControl>
+                <SelectContent>
+                  <SelectItem value="m@example.com">m@example.com</SelectItem>
+                  <SelectItem value="m@google.com">m@google.com</SelectItem>
+                  <SelectItem value="m@support.com">m@support.com</SelectItem>
+                </SelectContent>
+              </Select>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <br></br>
+        <FormField
+          control={form.control}
+          name="driver"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Grid Position</FormLabel>
+              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <FormControl>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select a verified email to display" />
+                  </SelectTrigger>
+                </FormControl>
+                <SelectContent>
+                  <SelectItem value="m@example.com">m@example.com</SelectItem>
+                  <SelectItem value="m@google.com">m@google.com</SelectItem>
+                  <SelectItem value="m@support.com">m@support.com</SelectItem>
+                </SelectContent>
+              </Select>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <br></br>
         <Button type="submit">Submit</Button>
       </form>
     </Form>

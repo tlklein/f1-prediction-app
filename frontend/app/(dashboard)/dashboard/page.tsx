@@ -25,7 +25,9 @@ export default function page() {
           <h2 className="text-3xl font-bold tracking-tight">
             Hi, Welcome Back! 
           </h2>
-          <h3>Choose your data & start your race!</h3>
+          <h3 className="text-1xl tracking-tight">
+            Choose your data & start your race! 
+          </h3>
           {/*
           <div className="hidden items-center space-x-2 md:flex">
             <CalendarDateRangePicker />
@@ -33,7 +35,6 @@ export default function page() {
           </div>
           */}
         </div>
-        
         <Tabs defaultValue="overview" className="space-y-4">
           <TabsContent value="overview" className="space-y-4">
             <div className="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-1">
@@ -51,7 +52,7 @@ export default function page() {
               </div>
               <Card className="col-span-4 md:col-span-3">
                 <CardHeader>
-                  <CardTitle>Current Drivers</CardTitle>
+                  <CardTitle>Predicted Grid Position</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <RecentSales />
