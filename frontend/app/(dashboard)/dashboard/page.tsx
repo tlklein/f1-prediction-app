@@ -5,6 +5,16 @@ import { CalendarDateRangePicker } from '@/components/date-range-picker';
 import { Overview } from '@/components/overview';
 import { RecentSales } from '@/components/recent-sales';
 import { Button } from '@/components/ui/button';
+import { Form } from '@/app/(dashboard)/dashboard/form';
+
+
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 
 
 import {
@@ -25,6 +35,7 @@ export default function page() {
           <h2 className="text-3xl font-bold tracking-tight">
             Hi, Welcome Back!
           </h2>
+          <Form></Form>
           {/*
           <div className="hidden items-center space-x-2 md:flex">
             <CalendarDateRangePicker />
@@ -43,6 +54,7 @@ export default function page() {
           */}
           <TabsContent value="overview" className="space-y-4">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+              {/*
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                   <CardTitle className="text-sm font-medium">
@@ -70,6 +82,16 @@ export default function page() {
                   <div></div>
                   <p className="text-xs text-muted-foreground">
                   </p>
+                <Select>
+                <SelectTrigger className="w-[180px]">
+                    <SelectValue placeholder="Theme" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="light">Light</SelectItem>
+                    <SelectItem value="dark">Dark</SelectItem>
+                    <SelectItem value="system">System</SelectItem>
+                  </SelectContent>
+                </Select>
                 </CardContent>
               </Card>
               <Card>
@@ -99,6 +121,7 @@ export default function page() {
                   <div ></div>
                   <p className="text-xs text-muted-foreground">
                   </p>
+
                 </CardContent>
               </Card>
               <Card>
@@ -154,8 +177,9 @@ export default function page() {
                   <div className="text-2xl font-bold"></div>
                   <p className="text-xs text-muted-foreground">
                   </p>
+                  
                 </CardContent>
-              </Card>
+              </Card> */}
             </div>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-7">
               <div className="col-span-4">
