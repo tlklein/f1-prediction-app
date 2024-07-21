@@ -5,7 +5,7 @@ import { CalendarDateRangePicker } from '@/components/date-range-picker';
 import { Overview } from '@/components/overview';
 import { RecentSales } from '@/components/recent-sales';
 import { Button } from '@/components/ui/button';
-import { Form } from '@/app/(dashboard)/dashboard/form';
+import { DriverForm } from '@/components/forms/driver-form';
 
 
 import {
@@ -35,7 +35,7 @@ export default function page() {
           <h2 className="text-3xl font-bold tracking-tight">
             Hi, Welcome Back!
           </h2>
-          <Form></Form>
+          <DriverForm></DriverForm>
           {/*
           <div className="hidden items-center space-x-2 md:flex">
             <CalendarDateRangePicker />
@@ -180,6 +180,7 @@ export default function page() {
                   
                 </CardContent>
               </Card> */}
+              
             </div>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-7">
               <div className="col-span-4">
