@@ -22,6 +22,15 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+
 import { toast } from "@/components/ui/use-toast"
 
 const FormSchema = z.object({
@@ -72,17 +81,32 @@ export function DriverForm() {
           name="driver"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Driver</FormLabel>
+              <FormLabel>Choose the driver.</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
                   <SelectTrigger>
-                    <SelectValue placeholder="Select a verified email to display" />
+                    <SelectValue placeholder="Select a verified driver to display." />
                   </SelectTrigger>
                 </FormControl>
-                <SelectContent>
-                  <SelectItem value="m@example.com">m@example.com</SelectItem>
-                  <SelectItem value="m@google.com">m@google.com</SelectItem>
-                  <SelectItem value="m@support.com">m@support.com</SelectItem>
+                <SelectContent className="h-[250px]">
+                  <SelectItem value="esteban_ocon">Esteban Ocon</SelectItem>
+                  <SelectItem value="pierre_gasly">Pierre Gasly</SelectItem>
+                  <SelectItem value="fernano_alonso">Fernano Alonso</SelectItem>
+                  <SelectItem value="charles_leclerc">Charles Leclerc</SelectItem>
+                  <SelectItem value="kevin_magnussen">Kevin Magnussen</SelectItem>
+                  <SelectItem value="nico_hulkenberg">Nico Hulkenberg</SelectItem>
+                  <SelectItem value="lando_norris">Lando Norris</SelectItem>
+                  <SelectItem value="oscar_pastri">Oscar Piastri</SelectItem>
+                  <SelectItem value="george_russell">George Russell</SelectItem>
+                  <SelectItem value="lewis_hamilton">Lewis Hamilton</SelectItem>
+                  <SelectItem value="max_verstappen">Max Verstappen</SelectItem>
+                  <SelectItem value="sergio_perez">Sergio Perez</SelectItem>
+                  <SelectItem value="daniel_ricciardo">Daniel Ricciardo</SelectItem>
+                  <SelectItem value="yuki_tsunoda">Yuki Tsunoda</SelectItem>
+                  <SelectItem value="guanyu_zhou">Guanyu Zhou</SelectItem>
+                  <SelectItem value="valtteri_bottas">Valtteri Bottas</SelectItem>
+                  <SelectItem value="alex_albon">Alex Albon</SelectItem>
+                  <SelectItem value="logan_sarge">Logan Sargeant</SelectItem>
                 </SelectContent>
               </Select>
               <FormMessage />
@@ -95,17 +119,25 @@ export function DriverForm() {
           name="team"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Team</FormLabel>
+              <FormLabel>Choose the constructor.</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
                   <SelectTrigger>
-                    <SelectValue placeholder="Select a verified email to display" />
+                    <SelectValue placeholder="Select a verified team to display." />
                   </SelectTrigger>
                 </FormControl>
-                <SelectContent>
-                  <SelectItem value="m@example.com">m@example.com</SelectItem>
-                  <SelectItem value="m@google.com">m@google.com</SelectItem>
-                  <SelectItem value="m@support.com">m@support.com</SelectItem>
+                <SelectContent className="h-[250px]">
+                  <SelectItem value="mclaren">McLaren</SelectItem>
+                  <SelectItem value="kick_sauber">Kick Sauber</SelectItem>
+                  <SelectItem value="williams">Williams</SelectItem>
+                  <SelectItem value="ferrai">Ferrari</SelectItem>
+                  <SelectItem value="toyota">Toyota</SelectItem>
+                  <SelectItem value="red_bull">Red Bull</SelectItem>
+                  <SelectItem value="mercedes">Mercedes</SelectItem>
+                  <SelectItem value="aston_martin">Aston Martin</SelectItem>
+                  <SelectItem value="rb">RB</SelectItem>
+                  <SelectItem value="haas">HAAS</SelectItem>
+                  <SelectItem value="alpine">Alpine</SelectItem>
                 </SelectContent>
               </Select>
               <FormMessage />
@@ -115,20 +147,40 @@ export function DriverForm() {
         <br></br>
         <FormField
           control={form.control}
-          name="driver"
+          name="circuit"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Circuit</FormLabel>
+              <FormLabel>Choose the circuit.</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
                   <SelectTrigger>
-                    <SelectValue placeholder="Select a verified email to display" />
+                    <SelectValue placeholder="Select a verified circuit to display." />
                   </SelectTrigger>
                 </FormControl>
-                <SelectContent>
-                  <SelectItem value="m@example.com">m@example.com</SelectItem>
-                  <SelectItem value="m@google.com">m@google.com</SelectItem>
-                  <SelectItem value="m@support.com">m@support.com</SelectItem>
+                <SelectContent className="h-[250px]">
+                  <SelectItem value="abu_dhabi">Abu Dhabi</SelectItem>
+                  <SelectItem value="qatar">Qatar</SelectItem>
+                  <SelectItem value="las_vegas">Las Vegas</SelectItem>
+                  <SelectItem value="brazil">Brazil</SelectItem>
+                  <SelectItem value="mexico">Mexico</SelectItem>
+                  <SelectItem value="united_states">United States</SelectItem>
+                  <SelectItem value="singapore">Singapore</SelectItem>
+                  <SelectItem value="azerbaijan">Azerbaijan</SelectItem>
+                  <SelectItem value="Italy">Italy</SelectItem>
+                  <SelectItem value="netherlands">Netherlands</SelectItem>
+                  <SelectItem value="belgium">Belgium</SelectItem>
+                  <SelectItem value="Hungary">Hungary</SelectItem>
+                  <SelectItem value="great_britain">Great Britain</SelectItem>
+                  <SelectItem value="austria">Austria</SelectItem>
+                  <SelectItem value="spain">Spain</SelectItem>
+                  <SelectItem value="canada">Canada</SelectItem>
+                  <SelectItem value="monaco">Monaco</SelectItem>
+                  <SelectItem value="emilia_romagna">Emilia-Romagna</SelectItem>
+                  <SelectItem value="miami">Miami</SelectItem>
+                  <SelectItem value="china">China</SelectItem>
+                  <SelectItem value="japan">Japan</SelectItem>
+                  <SelectItem value="australia">Australia</SelectItem>
+                  <SelectItem value="saudi_arabia">Saudi Arabia</SelectItem>
                 </SelectContent>
               </Select>
               <FormMessage />
@@ -138,20 +190,37 @@ export function DriverForm() {
         <br></br>
         <FormField
           control={form.control}
-          name="driver"
+          name="position"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Grid Position</FormLabel>
+              <FormLabel>Choose the grid position.</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
                   <SelectTrigger>
-                    <SelectValue placeholder="Select a verified email to display" />
+                    <SelectValue placeholder="Select a verified grid position to display." />
                   </SelectTrigger>
                 </FormControl>
-                <SelectContent>
-                  <SelectItem value="m@example.com">m@example.com</SelectItem>
-                  <SelectItem value="m@google.com">m@google.com</SelectItem>
-                  <SelectItem value="m@support.com">m@support.com</SelectItem>
+                <SelectContent className="h-[250px]">
+                  <SelectItem value="one">One</SelectItem>
+                  <SelectItem value="two">Two</SelectItem>
+                  <SelectItem value="three">Three</SelectItem>
+                  <SelectItem value="four">Four</SelectItem>
+                  <SelectItem value="five">Five</SelectItem>
+                  <SelectItem value="six">Six</SelectItem>
+                  <SelectItem value="seven">Seven</SelectItem>
+                  <SelectItem value="eight">Eight</SelectItem>
+                  <SelectItem value="nine">Nine</SelectItem>
+                  <SelectItem value="ten">Ten</SelectItem>
+                  <SelectItem value="eleven">Eleven</SelectItem>
+                  <SelectItem value="twelve">Twelve</SelectItem>
+                  <SelectItem value="thirteen">Thirteen</SelectItem>
+                  <SelectItem value="fourteen">Fourteen</SelectItem>
+                  <SelectItem value="fifteen">Fifteen</SelectItem>
+                  <SelectItem value="sixteen">Sixteen</SelectItem>
+                  <SelectItem value="seventeen">Seventeen</SelectItem>
+                  <SelectItem value="eighteen">Eighteen</SelectItem>
+                  <SelectItem value="nineteen">Nineteen</SelectItem>
+                  <SelectItem value="twenty">Twenty</SelectItem>
                 </SelectContent>
               </Select>
               <FormMessage />

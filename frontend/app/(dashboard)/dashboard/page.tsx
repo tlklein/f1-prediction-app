@@ -46,13 +46,14 @@ export default function page() {
               </Card>
               </div>
             </div>
+            {/* Start of prediction graphs */}
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-7">
               <div className="col-span-4">
                 <BarGraph />
               </div>
               <Card className="col-span-4 md:col-span-3">
                 <CardHeader>
-                  <CardTitle>Predicted Grid Position</CardTitle>
+                  <CardTitle> Predicted Grid Position </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <RecentSales />
