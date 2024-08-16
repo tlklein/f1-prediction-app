@@ -1,4 +1,4 @@
-![F1 Car](https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/manual/Misc/Driver%20Of%20The%20Day/2023/2023%20Drivers%20Grid%20Shot%202)
+![F1 Car with Drivers](https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/manual/Misc/Driver%20Of%20The%20Day/2023/2023%20Drivers%20Grid%20Shot%202)
 
 # Helios Prototype
 This is a simple application to predict F1 race results and hold F1 team data via csv. 

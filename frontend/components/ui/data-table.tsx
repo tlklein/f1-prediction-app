@@ -42,7 +42,7 @@ export function DataTable<TData, TValue>({
   console.log("value", table.getFilteredSelectedRowModel()); */
 
   return (
-    <>
+    <> {/* !! Working for all tables beside teams !! 
       <Input
         placeholder={`Search ${searchKey}...`}
         value={(table.getColumn(searchKey)?.getFilterValue() as string) ?? ''}
@@ -50,7 +50,7 @@ export function DataTable<TData, TValue>({
           table.getColumn(searchKey)?.setFilterValue(event.target.value)
         }
         className="w-full md:max-w-sm"
-      />
+      />  */}
       <ScrollArea className="h-[calc(80vh-220px)] rounded-md border">
         <Table className="relative">
           <TableHeader>
