@@ -34,7 +34,7 @@ export const columns: ColumnDef<Drivers>[] = [
   },
   {
     accessorKey: 'world_championships',
-    header: 'CHAMPIONSHIPS'
+    header: 'WORLD CHAMPIONSHIPS'
   },
   {
     accessorKey: 'dob',

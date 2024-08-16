@@ -58,10 +58,15 @@ To Learn More: https://www.formula1.com/en/latest/tags/beginner-s-guide.7szZSRQk
 # References
 Admin Dashboard Starter With NextJS14 and Shadcn UI/UX
 - Link: https://github.com/Kiranism/next-shadcn-dashboard-starter
-- Link: https://github.com/Kiranism/react-shadcn-dashboard-starter
 
 Formula 1 Race Prediction Application
 - Link: https://github.com/Sloopy3333/Formula-1-Prediction 
 
 Formula 1 World Championship (1950 - 2024) 
 - Link: https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020/data 
+
+Formula 1 Webisite - Data for 2024
+- Link: https://www.formula1.com/en.html 
+
+Lucide Dev Assets / Icons
+- Link: https://lucide.dev/icons/ 
