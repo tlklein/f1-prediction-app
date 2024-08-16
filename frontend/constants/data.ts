@@ -3,20 +3,268 @@ import { NavItem } from '@/types';
 
 export type Drivers = {
   id: number;
+  race_number: number;
   name: string;
-  company: string;
-  role: string;
-  verified: boolean;
-  status: string;
+  team: string;
+  country: string;
+  podiums: number;
+  points: number;
+  world_championships: number;
+  dob: string;
+  place_of_birth: string;
 };
 export const drivers: Drivers[] = [
   {
-    id: 44,
+    id: 1,
+    race_number: 1,
+    name: 'Max Verstappen',
+    team: 'Red Bull Racing',
+    country: 'Netherlands',
+    podiums: 107,
+    points: 2863.5,
+    world_championships: 3,
+    dob: '30/09/1997',
+    place_of_birth: 'Hasselt, Belgium'
+  },
+  {
+    id: 2,
+    race_number: 4,
+    name: 'Lando Norris',
+    team: 'McLaren',
+    country: 'United Kingdom',
+    podiums: 21,
+    points: 832,
+    world_championships: 0,
+    dob: '13/11/1999',
+    place_of_birth: 'Bristol, England'
+  },
+  {
+    id: 3,
+    race_number: 16,
+    name: 'Charles LeClerc',
+    team: 'Ferrari',
+    country: 'Monaco',
+    podiums: 36,
+    points: 1251,
+    world_championships: 0,
+    dob: '16/10/1997',
+    place_of_birth: 'Monte Carlo, Monaco'
+  },
+  {
+    id: 4,
+    race_number: 81,
+    name: 'Oscar Piastri',
+    team: 'McLaren',
+    country: 'Aurstalia',
+    podiums: 6,
+    points: 264,
+    world_championships: 0,
+    dob: '06/04/2001',
+    place_of_birth: 'Melbourne, Victoria'
+  },
+  {
+    id: 6,
+    race_number: 55,
+    name: 'Carlos Sainz',
+    team: 'Ferrari',
+    country: 'Monaco',
+    podiums: 23,
+    points: 1144.5,
+    world_championships: 0,
+    dob: '01/09/1994',
+    place_of_birth: 'Madrid, Spain'
+  },
+  {
+    id: 7,
+    race_number: 44,
     name: 'Lewis Hamilton',
-    company: 'Dell',
-    role: 'Frontend Developer',
-    verified: false,
-    status: 'Active'
+    team: 'Mercedes',
+    country: 'United Kingdom',
+    podiums: 201,
+    points: 4789.5,
+    world_championships: 7,
+    dob: '07/01/1985',
+    place_of_birth: 'Stevenage, England'
+  },
+  {
+    id: 8,
+    race_number: 11,
+    name: 'Sergio Perez',
+    team: 'Red Bull Racing',
+    country: 'Mexico',
+    podiums: 39,
+    points: 1617,
+    world_championships: 0,
+    dob: '26/01/1990',
+    place_of_birth: 'Guadalajara, Mexico'
+  },
+  {
+    id: 9,
+    race_number: 63,
+    name: 'George Russell',
+    team: 'Mercedes',
+    country: 'United Kingdom',
+    podiums: 13,
+    points: 585,
+    world_championships: 0,
+    dob: '15/02/1998',
+    place_of_birth: 'Kings Lynn, England'
+  },
+  {
+    id: 10,
+    race_number: 14,
+    name: 'Fernando Alonso',
+    team: 'Aston Martin',
+    country: 'Spain',
+    podiums: 106,
+    points: 2316,
+    world_championships: 2,
+    dob: '29/07/1981',
+    place_of_birth: 'Oviedo, Spain'
+  },
+  {
+    id: 5,
+    race_number: 18,
+    name: 'Lance Stroll',
+    team: 'Aston Martin',
+    country: 'Canada',
+    podiums: 3,
+    points: 292,
+    world_championships: 0,
+    dob: '29/10/1998',
+    place_of_birth: 'Montreal, Canada'
+  },
+  {
+    id: 11,
+    race_number: 18,
+    name: 'Nico Hulkenberg',
+    team: 'HAAS',
+    country: 'Germany',
+    podiums: 0,
+    points: 552,
+    world_championships: 0,
+    dob: '19/08/1987',
+    place_of_birth: 'Emmerich am Rhein, Germany'
+  },
+  {
+    id: 12,
+    race_number: 22,
+    name: 'Yuki Tsunoda',
+    team: 'RB',
+    country: 'Japan',
+    podiums: 0,
+    points: 83,
+    world_championships: 0,
+    dob: '11/05/2000',
+    place_of_birth: 'Sagamihara, Japan'
+  },
+  {
+    id: 13,
+    race_number: 22,
+    name: 'Daniel Ricciardo',
+    team: 'RB',
+    country: 'Australia',
+    podiums: 32,
+    points: 1329,
+    world_championships: 0,
+    dob: '01/07/1989',
+    place_of_birth: 'Perth, Australia'
+  },
+  {
+    id: 14,
+    race_number: 50,
+    name: 'Oliver Bearman',
+    team: 'HAAS',
+    country: 'United Kingdom',
+    podiums: 0,
+    points: 6,
+    world_championships: 0,
+    dob: '08/05/2005',
+    place_of_birth: 'Chelmsford, England'
+  },
+  {
+    id: 15,
+    race_number: 10,
+    name: 'Pierre Gasly',
+    team: 'Alpine',
+    country: 'France',
+    podiums: 4,
+    points: 400,
+    world_championships: 0,
+    dob: '07/02/1996',
+    place_of_birth: 'Rouen, France'
+  },
+  {
+    id: 16,
+    race_number: 10,
+    name: 'Kevin Magnussen',
+    team: 'HAAS',
+    country: 'Denmark',
+    podiums: 1,
+    points: 191,
+    world_championships: 0,
+    dob: '05/10/1992',
+    place_of_birth: 'Roskilde, Denmark'
+  },
+  {
+    id: 17,
+    race_number: 10,
+    name: 'Esteban Ocon',
+    team: 'Alpine',
+    country: 'France',
+    podiums: 3,
+    points: 147,
+    world_championships: 0,
+    dob: '17/09/1996',
+    place_of_birth: 'Evreux, Normandy'
+  },
+  {
+    id: 18,
+    race_number: 10,
+    name: 'Alexander Albon',
+    team: 'Williams',
+    country: 'France',
+    podiums: 2,
+    points: 232,
+    world_championships: 0,
+    dob: '23/03/1996',
+    place_of_birth: 'London, England'
+  },
+  {
+    id: 19,
+    race_number: 24,
+    name: 'Zhou Guanyu',
+    team: 'Kick Sauber',
+    country: 'France',
+    podiums: 0,
+    points: 12,
+    world_championships: 0,
+    dob: '30/05/1999',
+    place_of_birth: 'Shanghai, China'
+  },
+  {
+    id: 20,
+    race_number: 2,
+    name: 'Logan Sargeant',
+    team: 'Williams',
+    country: 'United States',
+    podiums: 0,
+    points: 1,
+    world_championships: 0,
+    dob: '31/12/2000',
+    place_of_birth: 'Fort Lauderdale, Florida'
+  },
+  {
+    id: 21,
+    race_number: 2,
+    name: 'Valtteri Bottast',
+    team: 'Kick Sauber',
+    country: 'Finland',
+    podiums: 67,
+    points: 1797,
+    world_championships: 0,
+    dob: '28/08/1989',
+    place_of_birth: 'Nastola, Finland'
   }
 ];
 

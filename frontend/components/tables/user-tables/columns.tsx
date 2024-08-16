@@ -10,14 +10,38 @@ export const columns: ColumnDef<Drivers>[] = [
   },
   {
     accessorKey: 'name',
-    header: 'NAME'
+    header: ' FULL NAME'
   },
   {
-    accessorKey: 'company',
-    header: 'COMPANY'
+    accessorKey: 'race_number',
+    header: 'Race Number'
   },
   {
-    accessorKey: 'role',
-    header: 'ROLE'
+    accessorKey: 'team',
+    header: 'TEAM'
+  },
+  {
+    accessorKey: 'country',
+    header: 'COUNTRY'
+  },
+  {
+    accessorKey: 'podiums',
+    header: 'PODIUMS'
+  },
+  {
+    accessorKey: 'points',
+    header: 'POINTS'
+  },
+  {
+    accessorKey: 'world_championships',
+    header: 'CHAMPIONSHIPS'
+  },
+  {
+    accessorKey: 'dob',
+    header: 'DATE OF BIRTH'
+  },
+  {
+    accessorKey: 'place_of_birth',
+    header: 'PLACE OF BIRTH'
   }
 ];
