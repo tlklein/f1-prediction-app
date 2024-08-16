@@ -22,44 +22,40 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
 
 import { toast } from "@/components/ui/use-toast"
+import { Separator } from "@radix-ui/react-dropdown-menu";
+
+const createSelectField = (fieldName: string) => 
+  z.string({
+    required_error: `Please select a ${fieldName}.`,
+  }).min(1, `Please select a ${fieldName}.`);
 
 const FormSchema = z.object({
-  driver: z
-    .string({
-      required_error: "Please select an driver.",
-    })
-    .email(),
-  team: z
-    .string({
-      required_error: "Please select an team.",
-    })
-    .email(),
-  position: z
-    .string({
-      required_error: "Please select the grid position.",
-    })
-    .email(),
-  circuit: z
-    .string({
-      required_error: "Please select a circuit.",
-    })
-    .email(),
-})
+  driver: createSelectField("driver"),
+  team: createSelectField("team"),
+  position: createSelectField("grid position"),
+  circuit: createSelectField("circuit"),
+});
 
 export function DriverForm() {
+  
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
   })
+  const { reset, handleSubmit, control, getValues } = form;
+  
+  const handleClearForm = () => {
+    const values = getValues();
+    if (Object.values(values).some(value => value)) {
+      reset({
+        driver: "",
+        team: "",
+        position: "",
+        circuit: ""
+      });
+    }
+  };
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
     toast({
@@ -228,7 +224,10 @@ export function DriverForm() {
           )}
         />
         <br></br>
-        <Button type="submit">Submit</Button>
+        <Button type="submit" className="ml-2">Submit</Button>
+        {/* 
+        <Button type="button" onClick={handleClearForm} className="ml-2">Clear</Button>
+        */}
       </form>
     </Form>
   )

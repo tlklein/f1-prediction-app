@@ -3,8 +3,8 @@ import { ColumnDef } from '@tanstack/react-table';
 import { Drivers } from '@/constants/data';
 
 export const columns: ColumnDef<Drivers>[] = [
-  { 
-    id: 'number',
+  {
+    id: 'select',
     enableSorting: false,
     enableHiding: false
   },

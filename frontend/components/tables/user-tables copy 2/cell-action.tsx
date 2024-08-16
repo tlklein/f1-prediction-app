@@ -1,4 +1,5 @@
 'use client';
+
 import { AlertModal } from '@/components/modal/alert-modal';
 import { Button } from '@/components/ui/button';
 import {
@@ -8,13 +9,13 @@ import {
   DropdownMenuLabel,
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu';
-import { Drivers } from '@/constants/data';
+import { Teams } from '@/constants/data';
 import { Edit, MoreHorizontal, Trash } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 interface CellActionProps {
-  data: Drivers;
+  data: Teams;
 }
 
 export const CellAction: React.FC<CellActionProps> = ({ data }) => {
