@@ -1,4 +1,5 @@
 import { NavItem } from '@/types';
+
 export type Drivers = {
   id: number;
   race_number: number;
