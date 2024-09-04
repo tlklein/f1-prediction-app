@@ -1,16 +1,14 @@
 ![F1 Car with Drivers](https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/manual/Misc/Driver%20Of%20The%20Day/2023/2023%20Drivers%20Grid%20Shot%202)
 
-# Helios Prototype
+# Helios Prototype - F1 Race Prediction Application
 This is a simple application to predict F1 race results and hold F1 team data via csv. 
-
 
 # What Is F1 Anyway?
 Formula 1 (a.k.a. F1 or Formula One) is the highest class of single-seater auto racing sanctioned by the Fédération Internationale de l'Automobile (FIA) and owned by the Formula One Group. The FIA Formula One World Championship has been one of the premier forms of racing around the world since its inaugural season in 1950. The word "formula" in the name refers to the set of rules to which all participants' cars must conform. A Formula One season consists of a series of races, known as Grands Prix, which take place worldwide on purpose-built circuits and on public roads.
 
 To Learn More: https://www.formula1.com/en/latest/tags/beginner-s-guide.7szZSRQkywApBCsTz1sDwg
 
-
-# How To Deploy / Commands
+# How To Deploy
 1. Clone depo
 - `git clone https://github.com/tlklein/heliosai.git`
 
@@ -32,7 +30,7 @@ To Learn More: https://www.formula1.com/en/latest/tags/beginner-s-guide.7szZSRQk
 6. Run dev 
 `npm run dev`
 
-7. You should now be able to run the application. 
+7. You should now be able to run the application in the local host. 
 - http://localhost:3000
 
 
