@@ -561,16 +561,19 @@ export const navItems: NavItem[] = [
     icon: 'page',
     label: 'teams'
   },
+  /* 
   {
     title: 'Profile',
     href: '/dashboard/profile',
     icon: 'profile',
     label: 'profile'
   },
+  
   {
     title: 'Login',
     href: '/',
     icon: 'login',
     label: 'login'
   }
+  */ 
 ];
