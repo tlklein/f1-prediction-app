@@ -68,3 +68,9 @@ Formula 1 Webisite - Data for 2024
 
 Lucide Dev Assets / Icons
 - Link: https://lucide.dev/icons/ 
+
+# Issue Log
+1. Takes long time to compile and load in localhost in browser. 
+    - issue in tables as well as chart in future most likely
+2. Fix and implement backend to load data in charts
+3. Make sure all graphs implemented line up and flex to sidebar or phone
