@@ -41,9 +41,10 @@ export function AreaGraph() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Area Chart - Stacked</CardTitle>
+        <CardTitle>Driver Performance Over a Season</CardTitle>
         <CardDescription>
-          Showing total visitors for the last 6 months
+        This line chart shows how the top drivers accumulate points over the course of the season. 
+        Each line represents a driver, allowing users to compare performance race by race.
         </CardDescription>
       </CardHeader>
       <CardContent>

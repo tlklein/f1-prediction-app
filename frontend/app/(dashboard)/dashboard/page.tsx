@@ -25,9 +25,11 @@ export default function page() {
           <h2 className="text-3xl font-bold tracking-tight">
             Hi, Welcome Back! 
           </h2>
+          {/*
           <h3 className="text-1xl tracking-tight">
             Choose your data & start your race! 
           </h3>
+          */}      
           {/*
           <div className="hidden items-center space-x-2 md:flex">
             <CalendarDateRangePicker />
@@ -39,11 +41,13 @@ export default function page() {
           <TabsContent value="overview" className="space-y-4">
             <div className="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-1">
               <div className="col-span-4">
+              {/*
               <Card className="col-span-4 md:col-span-3">
                 <CardContent>
                   <DriverForm />
                 </CardContent>
               </Card>
+              */}
               </div>
             </div>
             {/* Start of prediction graphs */}
@@ -53,7 +57,7 @@ export default function page() {
               </div>
               <Card className="col-span-4 md:col-span-3">
                 <CardHeader>
-                  <CardTitle> Predicted Grid Position </CardTitle>
+                  <CardTitle> Top 5 Driver Power Rankings </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <RecentSales />

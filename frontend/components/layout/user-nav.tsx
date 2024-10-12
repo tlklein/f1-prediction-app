@@ -12,6 +12,8 @@ import {
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu';
 import { signOut, useSession } from 'next-auth/react';
+
+
 export function UserNav() {
   const { data: session } = useSession();
   if (session) {
@@ -41,21 +43,22 @@ export function UserNav() {
           </DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuGroup>
-            <DropdownMenuItem>
+            {/* #FIXME: ADD LINKS TO PAGES*/}
+            <DropdownMenuItem> {/*onClick{() => } */}
               Profile
               <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
             </DropdownMenuItem>
-
+            {/* #FIXME: ADD LINKS TO PAGES*/}
             <DropdownMenuItem>
               Billing
               <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
             </DropdownMenuItem>
-
+            
+             {/* #FIXME: ADD LINKS TO PAGES*/}
             <DropdownMenuItem>
               Settings
               <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
             </DropdownMenuItem>
-            
           </DropdownMenuGroup>
           <DropdownMenuSeparator />
           <DropdownMenuItem onClick={() => signOut()}>
