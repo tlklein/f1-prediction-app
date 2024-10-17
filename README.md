@@ -63,7 +63,7 @@ Formula 1 Race Prediction Application
 Formula 1 World Championship (1950 - 2024) 
 - Link: https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020/data 
 
-Formula 1 Webisite - Data for 2024
+Formula 1 Website - Data for 2024
 - Link: https://www.formula1.com/en.html 
 
 Lucide Dev Assets / Icons
