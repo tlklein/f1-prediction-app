@@ -73,4 +73,4 @@ Lucide Dev Assets / Icons
 1. Takes long time to compile and load in localhost in browser. 
     - issue in tables as well as chart in future most likely
 2. Fix and implement backend to load data in charts
-3. Make sure all graphs implemented line up and flex to sidebar or phone
+
