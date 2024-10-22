@@ -72,5 +72,5 @@ Lucide Dev Assets / Icons
 # Issue Log
 1. Takes long time to compile and load in localhost in browser. 
     - issue in tables as well as chart in future most likely
+    - issue in dashboard and auth systems
 2. Fix and implement backend to load data in charts
-
