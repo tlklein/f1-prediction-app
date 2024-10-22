@@ -20,7 +20,7 @@ export const TeamsClient: React.FC<ProductsClientProps> = ({ data }) => {
     <>
       <div className="flex items-start justify-between">
         <Heading
-          title={`F1 Teams`}
+          title={`2024 F1 Teams`}
           description="View all current teams in 2024."
         />
       </div>

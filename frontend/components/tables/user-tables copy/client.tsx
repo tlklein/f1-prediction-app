@@ -17,7 +17,7 @@ export const CircuitsClient: React.FC<ProductsClientProps> = ({ data }) => {
     <>
       <div className="flex items-start justify-between">
         <Heading
-          title={`F1 Circuits`}
+          title={`2024 F1 Circuits`}
           description="View all circuits in 2024."
         />
       </div>
