@@ -1,4 +1,4 @@
-![F1 Car with Drivers](https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/manual/Misc/Driver%20Of%20The%20Day/2023/2023%20Drivers%20Grid%20Shot%202)
+![F1 Car with Drivers](https://mclaren.bloomreach.io/delivery/resources/content/gallery/mclaren-racing/formula-1/2024/editorial/f1-2025-schedule-article-cover-wide.jpg)
 
 # Helios Prototype - F1 Race Prediction Application
 This is a simple application to predict and display F1 data using data from multiple csv files.
@@ -24,16 +24,15 @@ To Learn More: https://www.formula1.com/en/latest/tags/beginner-s-guide.7szZSRQk
 - https://next-auth.js.org/configuration/options
 - https://github.com/settings/developers 
 
-5. Get into frontend folder
+5. Get into the frontend folder
 - `cd front ed`
 
 6. Run dev 
 `npm run dev`
 
-7. You should now be able to run the application in the local host. 
+7. You should now be able to run the application on the local host. 
 - http://localhost:3000
-
-
+ 
 # Tech Stack
 ## Frontend
 - Framework - [Next.js 14](https://nextjs.org/13)
@@ -53,6 +52,12 @@ To Learn More: https://www.formula1.com/en/latest/tags/beginner-s-guide.7szZSRQk
 - F1 Data Set - [Kaggle](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020/data)
 - CSV Parser - [Paga Parse](https://www.papaparse.com/)
 
+# Issue Log
+1. Takes a long time to compile and load in localhost in the browser. 
+    - issue in tables, charts, & auth
+    - issue in the dashboard and auth systems
+2. Fix and implement backend to load data in charts
+
 # References
 Admin Dashboard Starter With NextJS14 and Shadcn UI/UX
 - Link: https://github.com/Kiranism/next-shadcn-dashboard-starter
@@ -68,9 +73,3 @@ Formula 1 Website - Data for 2024
 
 Lucide Dev Assets / Icons
 - Link: https://lucide.dev/icons/ 
-
-# Issue Log
-1. Takes long time to compile and load in localhost in browser. 
-    - issue in tables, charts, & auth
-    - issue in dashboard and auth systems
-2. Fix and implement backend to load data in charts
