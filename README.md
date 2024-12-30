@@ -26,11 +26,10 @@ npm start
 ## Data Requirements
 
 Place your F1 CSV files in `backend/data/`:
-- races.csv: Race information
-- results.csv: Race results
-- drivers.csv: Driver information
+- You can find some on kaggle: https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020
 
 ## Features
 - Race position predictions using machine learning
 - Interactive data visualization
 - Historical trend analysis
+
